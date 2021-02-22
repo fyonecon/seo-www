@@ -1,0 +1,44 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>jquery.datePicker--选择过去的时间和将来的时间</title>
+
+    <script src="jquery-1.11.3.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="jcDate.css" media="all" />
+    <script type="text/javascript" src="jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="jQuery-jcDate.js" charset="utf-8"></script>
+
+</head>
+<body>
+<input class="jcDate"  />
+<input class="jcDate2"  />
+<script type="text/javascript">
+    $(function (){
+        $(".jcDate").jcDate({
+            IcoClass : "jcDateIco",
+            Event : "click",
+            Speed : 100,
+            Left : 0,
+            Top : 28,
+            format : "-",
+            Timeout : 100
+        });
+        $(".jcDate2").jcDate({
+            IcoClass : "jcDateIco",
+            Event : "click",
+            Speed : 100,
+            Left : 0,
+            Top : 28,
+            format : "-",
+            Timeout : 100
+        });
+    });
+
+</script>
+
+</body>
+</html>

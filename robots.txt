@@ -1,0 +1,6 @@
+# robots.txt
+User-agent: *
+Disallow: /common/
+Disallow: /header/
+Disallow: /storage/
+Disallow: /test/
