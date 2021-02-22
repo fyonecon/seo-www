@@ -7,13 +7,11 @@
 $this_host = $_SERVER['SERVER_NAME']; // 获取当前主域名
 
 // 自动匹配主网址
-if(strpos($this_host, 'cswendu.com') !== false){ // cswendu.com网站
+if(strpos($this_host, 'xxx.com') !== false){ // cswendu.com网站
     $this_domain = "https://{$this_host}/";
-}else if (strpos($this_host, '.wendu.com') !== false){ // *.wendu.com网站
-    $this_domain = "https://{$this_host}/pc/";
-}else if (strpos($this_host, '127.0.0.1') !== false){ // 本地127.0.0.1
-    $this_domain = "http://{$this_host}/cswendu.com/seo.www.cswendu.com/";
-//    $this_domain = '/git-wendu2/seo.www.cswendu.com/';
+}
+else if (strpos($this_host, '127.0.0.1') !== false){ // 本地127.0.0.1
+    $this_domain = "http://{$this_host}/seo-www/";
 
 }else{ // 默认
     $this_domain = "//{$this_host}/";
@@ -23,7 +21,7 @@ $web_url    = "{$this_domain}"; // 页面跳转主地址
 $file_url   = "{$this_domain}"; // 静态文件
 $img_url    = "{$this_domain}"; // 图片地址
 
-$api_url    = 'https://api.cswendu.com/cswd/public/index.php/api/gen2/'; // api，若能内网访问，优先用内网地址。http://172.16.165.212、https://api.cswendu.com
+$api_url    = 'https://api.cswendu.com/cswd/public/index.php/api/gen2/'; // api，若能内网访问，优先用内网地址。
 $kefu_url   = 'xxx'; // 客服
 
 $app_class  = 'seo_www'; // 接口来源/种类
@@ -48,21 +46,15 @@ $sys_keywords       = ''; // 系统默认关键词
 $sys_description    = ''; // 系统默认描述
 
 // 不同网站对应不同公共参数
-if (in_array($this_host, ['cswendu.com', 'www.cswendu.com', 'm.cswendu.com'])){
-    $logo_img_name = 'logo-hunan.png'; // 根据域名设置logo图片选哪张
-    $website_beian = 'cswendu'; // 根据域名设置底部选哪个备案
-    $app_class = 'seo_cswendu';
+if (in_array($this_host, ['xxx.com', 'www.xxx.com', 'm.xxx.com'])){
+    $logo_img_name = 'logo.png'; // 根据域名设置logo图片选哪张
+    $website_beian = 'xxx'; // 根据域名设置底部选哪个备案
+    $app_class = 'seo_xxx';
     $meta_spider_state = '';
     $a_spider_state = ''; //
-}else if (in_array($this_host, ['cs.wendu.com', 'hn.wendu.com'])){
-    $logo_img_name = 'logo.png';
-    $website_beian = 'wendu';
-    $app_class = 'seo_wendu';
-    $meta_spider_state = '<meta name="robots" content="nofollow" />'.PHP_EOL;
-    $a_spider_state = ' rel="nofollow" ';
 }else{
     $logo_img_name = 'logo.png?site=other';
-    $website_beian = 'wendu';
+    $website_beian = 'xxx';
     $app_class = 'seo_other';
     $meta_spider_state = '<meta name="robots" content="nofollow" />'.PHP_EOL;
     $a_spider_state = ' rel="nofollow" ';
@@ -71,8 +63,8 @@ if (in_array($this_host, ['cswendu.com', 'www.cswendu.com', 'm.cswendu.com'])){
 // 生成dns-prefetch
 $dns_prefetch = '
     <link rel="dns-prefetch" href="'.$web_url.'" />
-    <link rel="dns-prefetch" href=//img.cswendu.com" />
-    <link rel="dns-prefetch" href=//oss.cswendu.com" />
+    <link rel="dns-prefetch" href=//img.xxx.com" />
+    <link rel="dns-prefetch" href=//oss.xxx.com" />
     ';
 
 // 展示PHP的exception和notice

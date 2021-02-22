@@ -29,34 +29,6 @@ require_once $head_path.'/parts/seo_default_tkd.php'; // 导入seo关键词参�
     <meta name="mobile-agent" content="format=[wml|xhtml|html5]; url=https://m.cswendu.com"/>
     <meta name="applicable-device" content="pc,mobile">
 
-    <link href="<?=$file_url?>static/css/common.css?<?=$head_time?>" rel="stylesheet"/>
-    <link href="<?=$file_url?>static/css/all.css?<?=$head_time?>" rel="stylesheet"/>
-    <link href="<?=$file_url?>static/css/style.css?<?=$head_time?>" rel="stylesheet"/>
-
-    <script src="<?=$file_url?>static/js/jquery-1.11.3.min.js" type="text/javascript"></script>
-
-    <script src="<?=$file_url?>static/js/common.js?<?=$head_time?>" type="text/javascript"></script>
-    <script src="<?=$file_url?>static/js/check.js?<?=$head_time?>" type="text/javascript"></script>
-    <script src="<?=$file_url?>static/js/all.js?<?=$head_time?>" type="text/javascript"></script>
-    <script src="<?=$file_url?>static/js/md5.js" type="text/javascript"></script>
-    <script src="<?=$file_url?>static/js/qrcode.js?<?=$head_time?>" type="text/javascript"></script>
-
-    <link href="<?=$file_url?>static/pl/bootstrap4.1.3-dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <script src="<?=$file_url?>static/pl/bootstrap4.1.3-dist/js/bootstrap.min.js" type="text/javascript"></script>
-
-    <link rel="stylesheet" type="text/css" href="<?=$file_url?>static/pl/jc_date/jcDate.css" media="all" />
-    <script type="text/javascript" src="<?=$file_url?>static/pl/jc_date/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="<?=$file_url?>static/pl/jc_date/jQuery-jcDate.js" charset="utf-8"></script>
-
-    <link href="<?=$file_url?>static/pl/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <link href="<?=$file_url?>static/css/animate.min.css" rel="stylesheet"/>
-    <script src="<?=$file_url?>static/pl/swiper/swiper.min.js"></script>
-    <link href="<?=$file_url?>static/pl/swiper/swiper.min.css?<?=$head_time?>" rel="stylesheet">
-    <link href="<?=$file_url?>static/css/detail.less" rel="stylesheet/less">
-    <script src="<?=$file_url?>static/js/less.js"></script>
-    <script src="<?=$file_url?>static/js/jquery.sPage.js"></script>
-    <link href="<?=$file_url?>static/css/jquery.sPage.css" rel="stylesheet">
-
 </head>
 <body class=" body">
 

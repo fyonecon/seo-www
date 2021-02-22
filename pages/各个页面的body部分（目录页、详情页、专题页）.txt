@@ -1,0 +1,1 @@
+各个页面的body部分，与header权重并列。header+pages才能合成完整的html文件。

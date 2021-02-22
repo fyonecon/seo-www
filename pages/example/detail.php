@@ -7,9 +7,8 @@ $description = ''; // 可选，为空时将使用默认
 $index_path = dirname(dirname(dirname(__FILE__))); // 项目index的根目录
 
 require $index_path.'/config/config.php';
-require $index_path.'/common/function.php';
-require $index_path.'/common/secret_id.php';
-require $index_path.'/common/safe_check.php';
+require $index_path.'/depend/function.php';
+require $index_path.'/depend/safe_check.php';
 ?>
 
 
@@ -56,8 +55,8 @@ function get_detail($api_url, $app_class, $white_app_token){
 
 
 <?php // 依赖
-require $index_path . '/header/pages_example/head.php';
-require $index_path . '/header/pages_example/nav.php';
+require $index_path.'/header/pages_example/head.php';
+require $index_path.'/header/pages_example/nav.php';
 ?>
 
 <!-- 开始-内容 -->
@@ -86,5 +85,5 @@ require $index_path . '/header/pages_example/nav.php';
 <?php // 依赖
 require $index_path.'/config/must.php';
 require $index_path.'/header/pages_example/foot.php';
-require $index_path.'/common/safe_echo.php';
+require $index_path.'/depend/safe_echo.php';
 ?>

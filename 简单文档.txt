@@ -3,7 +3,7 @@
 
 
 #00：项目结构解释：
-实体目录，路径路由不需要参数化，不需要继承关系。
+实体目录，路径路由不需要参数化，不需要继承关系，避免路由参数化造成的未知安全问题。
 
 
 #01：目录解释：
@@ -33,4 +33,11 @@
 
 #05：数据模板渲染：
 使用PHP原生GET/POST请求echo出来的api数据。
+
+
+#06：访问：
+首  页：www.xxx.com/
+子页：www.xxx.com/pages/example/?nav=
+子页-详情：www.xxx.com/pages/example/detail.php?nav=
+专题页：www.xxx.com/pages/topic/example/?nav=
 

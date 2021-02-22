@@ -1,0 +1,1 @@
+html公共的头和尾部，与pages权重并列。header+pages才能合成完整的html文件。
